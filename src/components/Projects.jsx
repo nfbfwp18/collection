@@ -11,7 +11,7 @@ const featuredVideos = [
     tags: ['动画设计', '视觉艺术', '团队参赛', '蓝桥杯'],
     desc: '参加第十七届蓝桥杯全国大学生软件和信息技术大赛视觉艺术设计赛，以古越绍兴黄酒文化为主题，深度挖掘非遗文化内涵进行动画创作，团队作品荣获浙江赛区三等奖。',
     year: '2026',
-    src: '/guyue.mp4',
+    src: 'https://zponmhu5n898w9md.public.blob.vercel-storage.com/guyue.mp4',
   },
   {
     id: 'v2',
@@ -21,7 +21,7 @@ const featuredVideos = [
     tags: ['AIGC', 'AI 创作', '视频剪辑', '文化叙事'],
     desc: '以 AI 生成技术为核心工具，结合传统文化叙事脉络，完成从脚本策划、素材生成到后期剪辑的全流程创作，探索 AIGC 辅助视频内容生产的完整实践路径。',
     year: '2026',
-    src: '/shiguang.mp4',
+    src: 'https://zponmhu5n898w9md.public.blob.vercel-storage.com/%E3%80%8A%E6%97%B6%E5%85%89%E9%87%8C%E7%9A%84%E4%BC%A0%E6%89%BF%E3%80%8B.mp4',
   },
 ]
 
