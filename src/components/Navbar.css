@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 24px 40px;
+  transition: all 0.4s ease;
+}
+
+.navbar--scrolled {
+  padding: 14px 40px;
+  background: rgba(248, 246, 242, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.navbar__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 2px;
+}
+
+.navbar__logo-cn {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--clr-text);
+  letter-spacing: 0.1em;
+}
+
+.navbar__logo-en {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--clr-text-muted);
+  text-transform: uppercase;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.navbar__link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clr-text-muted);
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--clr-accent);
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--clr-text);
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+}
+
+.navbar__cta {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 10px 24px;
+  border: 1.5px solid var(--clr-text);
+  color: var(--clr-text);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar__cta:hover {
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+/* Hero section - transparent nav */
+.navbar:not(.navbar--scrolled) .navbar__logo-cn,
+.navbar:not(.navbar--scrolled) .navbar__logo-en,
+.navbar:not(.navbar--scrolled) .navbar__link,
+.navbar:not(.navbar--scrolled) .navbar__cta {
+  color: rgba(255,255,255,0.92);
+}
+
+.navbar:not(.navbar--scrolled) .navbar__cta {
+  border-color: rgba(255,255,255,0.6);
+}
+
+.navbar:not(.navbar--scrolled) .navbar__cta:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.9);
+}
+
+.navbar:not(.navbar--scrolled) .navbar__logo-en {
+  color: rgba(255,255,255,0.6);
+}

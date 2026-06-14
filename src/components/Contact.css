@@ -1,0 +1,240 @@
+.contact {
+  position: relative;
+  background: var(--clr-deep);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 120px 40px;
+}
+
+/* Background shapes */
+.contact__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.contact__bg-shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.contact__bg-shape--1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 169, 110, 0.08) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+}
+
+.contact__bg-shape--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(200, 169, 110, 0.05) 0%, transparent 70%);
+  bottom: -100px;
+  left: 100px;
+}
+
+.contact__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* Top */
+.contact__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 24px;
+}
+
+.contact__eyebrow-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--clr-accent);
+}
+
+.contact__heading {
+  font-family: var(--font-serif);
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.contact__heading-accent {
+  color: var(--clr-accent);
+}
+
+.contact__sub {
+  font-size: 17px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+/* Cards */
+.contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: rgba(255,255,255,0.05);
+}
+
+.contact__card {
+  background: rgba(255,255,255,0.03);
+  padding: 36px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.contact__card:hover {
+  background: rgba(200, 169, 110, 0.08);
+}
+
+.contact__card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(200, 169, 110, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--clr-accent);
+  transition: background 0.3s;
+}
+
+.contact__card:hover .contact__card-icon {
+  background: rgba(200, 169, 110, 0.25);
+}
+
+.contact__card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.contact__card-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+.contact__card-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__card-arrow {
+  width: 32px;
+  height: 32px;
+  color: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.contact__card-arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contact__card:hover .contact__card-arrow {
+  color: var(--clr-accent);
+  transform: translate(2px, -2px);
+}
+
+.contact__card-badge {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  background: rgba(120, 200, 140, 0.15);
+  color: #78c88c;
+  border: 1px solid rgba(120, 200, 140, 0.3);
+  padding: 4px 12px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+/* Divider */
+.contact__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+}
+
+/* Bottom */
+.contact__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contact__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact__brand-cn {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+.contact__brand-en {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.1em;
+}
+
+.contact__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.contact__meta span {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.05em;
+}
+
+.contact__copy {
+  font-size: 12px !important;
+  color: rgba(255,255,255,0.2) !important;
+}
