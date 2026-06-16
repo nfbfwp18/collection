@@ -9,11 +9,11 @@ const featuredVideos = [
     category: '动画设计 · 蓝桥杯获奖作品',
     award: '🏆 第十七届蓝桥杯 · 浙江赛区三等奖',
     tags: ['动画设计', '视觉艺术', '团队参赛', '蓝桥杯'],
-    desc: '参加第十七届蓝桥杯全国大学生软件和信息技术大赛视觉艺术设计赛，以古越绍兴黄酒文化为主题，深度挖掘非遗文化内涵进行动画创作，团队作品荣获浙江赛区三等奖。',
+    desc: '...', // 省略了描述
     year: '2026',
-    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759155705489&bvid=BV1S2j36tEi9&cid=39161695656&p=1'
-    
-    isExternal:true },
+    src: '//player.bilibili.com/player.html?bvid=BV1S2j36tEi9',
+    isExternal: true // <--- 必须在大括号里面
+  }, // <--- 注意这里的逗号，必须有！
  
   {
     id: 'v2',
