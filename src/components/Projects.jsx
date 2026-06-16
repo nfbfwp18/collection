@@ -11,8 +11,10 @@ const featuredVideos = [
     tags: ['动画设计', '视觉艺术', '团队参赛', '蓝桥杯'],
     desc: '参加第十七届蓝桥杯全国大学生软件和信息技术大赛视觉艺术设计赛，以古越绍兴黄酒文化为主题，深度挖掘非遗文化内涵进行动画创作，团队作品荣获浙江赛区三等奖。',
     year: '2026',
-    src: 'https://zponmhu5n898w9md.public.blob.vercel-storage.com/guyue.mp4',
-  },
+    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759155705489&bvid=BV1S2j36tEi9&cid=39161695656&p=1'
+    
+    isExternal:true },
+ 
   {
     id: 'v2',
     title: '《时光里的传承》',
@@ -21,8 +23,8 @@ const featuredVideos = [
     tags: ['AIGC', 'AI 创作', '视频剪辑', '文化叙事'],
     desc: '以 AI 生成技术为核心工具，结合传统文化叙事脉络，完成从脚本策划、素材生成到后期剪辑的全流程创作，探索 AIGC 辅助视频内容生产的完整实践路径。',
     year: '2026',
-    src: 'https://zponmhu5n898w9md.public.blob.vercel-storage.com/%E3%80%8A%E6%97%B6%E5%85%89%E9%87%8C%E7%9A%84%E4%BC%A0%E6%89%BF%E3%80%8B.mp4',
-  },
+    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759189258520&bvid=BV1USj36xExR&cid=39161761457&p=1',
+  isExternal:true },
 ]
 
 // UI 展板数据
@@ -33,50 +35,51 @@ const uiBoards = [
 ]
 
 function VideoCard({ v, index }) {
-  const videoRef = useRef(null)
-  const [playing, setPlaying] = useState(false)
+  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
 
   const handlePlay = () => {
+    if (v.isExternal) return;
     if (!playing) {
-      videoRef.current?.play()
-      setPlaying(true)
+      videoRef.current?.play();
+      setPlaying(true);
     } else {
-      videoRef.current?.pause()
-      setPlaying(false)
+      videoRef.current?.pause();
+      setPlaying(false);
     }
-  }
+  };
 
-  return (
+   return (
     <div className={`video-card ${index === 0 ? 'video-card--first' : ''}`}>
       <div className="video-card__award-tag">{v.award}</div>
       <div className="video-card__media" onClick={handlePlay}>
-        <video
-          ref={videoRef}
-          src={v.src}
-          className="video-card__video"
-          loop
-          playsInline
-          preload="metadata"
-        />
-        <div className={`video-card__play-mask ${playing ? 'video-card__play-mask--playing' : ''}`}>
-          {!playing ? (
-            <div className="video-card__play-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          ) : (
-            <div className="video-card__pause-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-            </div>
-          )}
-        </div>
+        {v.isExternal ? (
+          <iframe 
+            src={v.src} 
+            className="video-card__video"
+            scrolling="no" 
+            frameBorder="0" 
+            allowFullScreen={true}
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            src={v.src}
+            className="video-card__video"
+            loop
+            playsInline
+            preload="metadata"
+          />
+        )}
       </div>
+      {/* 这一行下面直接接你的 body 部分，不要再有多余的代码了！ */}
       <div className="video-card__body">
         <div className="video-card__meta">
           <span className="video-card__year">{v.year}</span>
           <span className="video-card__category">{v.category}</span>
         </div>
         <h3 className="video-card__title">{v.title}</h3>
-        <p className="video-card__desc">{v.desc}</p>
+        <p className="video-card__desc">{v.desc}</p >
         <div className="video-card__tags">
           {v.tags.map(tag => (
             <span key={tag} className="video-card__tag">{tag}</span>
@@ -84,8 +87,9 @@ function VideoCard({ v, index }) {
         </div>
       </div>
     </div>
-  )
-}
+  );}
+  
+
 
 // UI 展板灯箱组件
 function UIGallery() {
