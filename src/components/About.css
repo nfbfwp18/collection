@@ -297,6 +297,172 @@
   letter-spacing: 0.02em;
 }
 
+/* 实习经历 */
+.about__exp {
+  border-top: 1px solid var(--clr-border);
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about__exp-header {
+  margin-bottom: 28px;
+}
+
+.about__exp-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 12px;
+}
+
+.about__exp-eyebrow-line {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--clr-accent);
+}
+
+.about__exp-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--clr-text);
+}
+
+.about__exp-item {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.about__exp-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 18px;
+  bottom: 0;
+  width: 1px;
+  background: var(--clr-border);
+}
+
+.about__exp-item:last-child {
+  padding-bottom: 0;
+}
+
+.about__exp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  margin-top: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px var(--clr-accent-light);
+  position: relative;
+  z-index: 1;
+}
+
+.about__exp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.about__exp-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about__exp-date {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--clr-accent);
+}
+
+.about__exp-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--clr-accent-dark);
+  background: var(--clr-accent-light);
+  padding: 3px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+
+.about__exp-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--clr-text);
+}
+
+.about__exp-company {
+  font-size: 13px;
+  color: var(--clr-text-muted);
+  font-weight: 500;
+}
+
+.about__exp-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.about__exp-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  color: var(--clr-text-muted);
+  line-height: 1.7;
+}
+
+.about__exp-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--clr-accent);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.about__exp-list strong {
+  color: var(--clr-accent-dark);
+  font-weight: 700;
+}
+
+.about__exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.about__exp-tags span {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--clr-text-muted);
+  background: var(--clr-surface-2);
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--clr-border);
+  letter-spacing: 0.02em;
+}
+
 /* 获奖模块 */
 .about__award {
   display: flex;

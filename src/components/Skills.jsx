@@ -2,14 +2,15 @@ import './Skills.css'
 
 // 软件工具列表
 const softwareList = [
-  { name: 'Photoshop', short: 'PS', color: '#31A8FF' },
   { name: 'Premiere Pro', short: 'PR', color: '#EA77FF' },
+  { name: 'Photoshop', short: 'PS', color: '#31A8FF' },
+  { name: 'After Effects', short: 'AE', color: '#9999FF' },
+  { name: 'Audition', short: 'AU', color: '#00E4BB' },
   { name: 'Animate', short: 'AN', color: '#FF7C00' },
   { name: 'Adobe XD', short: 'XD', color: '#FF61F6' },
-  { name: 'Audition', short: 'AU', color: '#00E4BB' },
+  { name: '剪映', short: '剪映', color: '#00FFF0' },
   { name: '3ds Max', short: '3DMAX', color: '#37A5CC' },
   { name: 'Blender', short: 'Blender', color: '#E87D0D' },
-  { name: 'After Effects', short: 'AE', color: '#9999FF' },
   { name: 'Word / Excel / PPT', short: 'Office', color: '#D83B01' },
 ]
 
@@ -21,26 +22,12 @@ const skills = [
         <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="1.8"/>
       </svg>
     ),
-    title: 'AIGC 创作',
-    subtitle: 'AI Content Generation',
+    title: 'AIGC 内容创作',
+    subtitle: 'AI Generated Content',
     level: 92,
     highlight: true,
-    desc: '具备完整的 AIGC 内容创作实践能力，熟练运用 AI 工具完成图像生成、视频制作与动画创作，作品《时光里的传承》是 AI 辅助叙事创作的典型实践。',
-    tags: ['AI 图像生成', 'AI 视频制作', 'AI 动画', '创意叙事'],
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <rect x="6" y="8" width="36" height="28" rx="2" stroke="currentColor" strokeWidth="2"/>
-        <path d="M16 36l8-12 8 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="20" cy="22" r="4" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
-    title: '图像处理',
-    subtitle: 'PS · Adobe Photoshop',
-    level: 90,
-    desc: '熟练完成视频素材的画面优化、包装设计、色彩调整及素材合成，具备扎实的视觉审美与平面设计能力。',
-    tags: ['画面优化', '包装设计', '色彩处理', 'UI 视觉'],
+    desc: '熟练运用多套 AI 生图工具进行画面抽卡与素材生成，具备从脚本策划、AI 素材产出到后期剪辑的完整 AIGC 短剧制作链路；导演 AIGC 精品短剧《捡漏未来摄政王，我只想发财》，抖音播放 30W+、红果短剧热度 4000W+。',
+    tags: ['AI 图像生成', 'AI 抽卡', '短剧导演', '内容策划'],
   },
   {
     icon: (
@@ -50,51 +37,53 @@ const skills = [
         <path d="M22 34l4-16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
-    title: '视频剪辑',
-    subtitle: 'PR · Premiere Pro',
+    title: '短视频剪辑 · 后期包装',
+    subtitle: 'PR · 剪映 · AE',
+    level: 88,
+    desc: '熟练掌握 Premiere 全流程剪辑，涵盖脚本规划、精剪、节奏把控、调色、字幕包装及音效合成；熟悉抖音、小红书等平台内容调性，可独立产出符合短视频平台审美的成片内容。',
+    tags: ['Premiere', '剪映', '精剪调色', '后期包装', '节奏把控'],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none">
+        <path d="M8 36V14l16-8 16 8v22" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
+        <circle cx="24" cy="26" r="6" stroke="currentColor" strokeWidth="2"/>
+        <path d="M14 36h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+    ),
+    title: '拍摄策划 · 脚本创作',
+    subtitle: 'Shooting & Script',
+    level: 82,
+    desc: '具备独立完成短视频脚本策划与分镜设计能力，擅长结合热点梗与平台调性进行内容创意；有短剧导演经验，熟悉从选题、脚本到拍摄执行的完整创作链路。',
+    tags: ['脚本策划', '分镜设计', '热点捕捉', '创意构思'],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="8" width="36" height="28" rx="2" stroke="currentColor" strokeWidth="2"/>
+        <path d="M16 36l8-12 8 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="20" cy="22" r="4" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    title: '物料设计 · 图像处理',
+    subtitle: 'PS · Adobe Photoshop',
+    level: 85,
+    desc: '熟练运用 Photoshop 完成海报设计、物料包装、画面精修与视觉优化，可独立产出宣传物料、封面图及短视频配套平面素材，具备良好的色彩审美与排版能力。',
+    tags: ['海报设计', '物料包装', '画面精修', '色彩处理'],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2"/>
+        <path d="M24 12v12l8 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    ),
+    title: '新媒体运营 · 网感',
+    subtitle: 'New Media Sense',
     level: 80,
-    desc: '掌握 Premiere 全流程操作，具备素材管理、精剪、调色及特效添加能力，可独立完成视频脚本整理与项目进度管理。',
-    tags: ['精剪调色', '特效制作', '素材管理', '脚本整理'],
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <path d="M8 38V16l16-8 16 8v22" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M24 8v10M16 12l8 6 8-6" stroke="currentColor" strokeWidth="2"/>
-        <rect x="16" y="26" width="16" height="12" rx="1" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
-    title: 'UI 设计',
-    subtitle: 'XD · Adobe XD',
-    level: 78,
-    desc: '具备完整的 UI 设计流程能力，可独立完成从用户研究、原型设计到高保真视觉规范的全链路设计，擅长 IP 形象与移动端界面设计。',
-    tags: ['用户研究', '原型设计', '视觉规范', 'IP 形象'],
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <path d="M24 8l4 8 9 1.3-6.5 6.3 1.5 9L24 28l-8 4.7 1.5-9L11 17.3l9-1.3z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M24 36v5M16 40l4-4M32 40l-4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: '动画设计',
-    subtitle: 'AN · Adobe Animate',
-    level: 75,
-    desc: '系统学习网络动画设计与 AN 工具，能完成帧动画、骨骼动画及交互动画制作，蓝桥杯获奖作品《古越酒韵》即为动画设计实践成果。',
-    tags: ['帧动画', '骨骼动画', '动效设计', '文化叙事'],
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <path d="M12 36V20l12-6 12 6v16l-12 6-12-6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M24 14v14M12 20l12 8 12-8" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
-    title: '次世代建模',
-    subtitle: '3ds Max · Blender',
-    level: 70,
-    desc: '系统学习次世代三维建模技术，熟练使用 3ds Max 与 Blender 完成高精度模型创建与 PBR 材质贴图，注重比例把控与细节还原。',
-    tags: ['3ds Max', 'Blender', 'PBR 材质', '硬表面建模'],
+    desc: '长期活跃于抖音、小红书等短视频平台，对热点话题与流量逻辑有敏锐感知；了解短视频内容的传播规律与用户喜好，具备内容选题、账号运营与粉丝维护的基础能力。',
+    tags: ['抖音运营', '小红书', '热点追踪', '内容敏感'],
   },
   {
     icon: (
@@ -104,11 +93,11 @@ const skills = [
         <path d="M10 19h28M10 29h28" stroke="currentColor" strokeWidth="2"/>
       </svg>
     ),
-    title: '语言 · 沟通',
-    subtitle: 'Language',
-    level: 80,
-    desc: '普通话水平良好，大学英语四级证书，具备良好的中英文书面表达能力；沟通能力强，善于团队协作与项目统筹，曾任学生会干部。',
-    tags: ['英语四级', '团队协作', '项目统筹', '文案撰写'],
+    title: '沟通协作 · 执行力',
+    subtitle: 'Teamwork & Execution',
+    level: 85,
+    desc: '执行力强，具备良好的跨团队沟通协作能力与责任心；有虚拍制片统筹经验，熟悉项目进度管理与成本把控；曾任学生会干部，组织协调过多场校园活动。',
+    tags: ['团队协作', '项目统筹', '成本控制', '责任心强'],
   },
 ]
 
@@ -121,8 +110,8 @@ export default function Skills() {
             <span className="skills__eyebrow-line" />
             <span>MY STRENGTHS</span>
           </div>
-          <h2 className="skills__heading">个人优势</h2>
-          <p className="skills__sub">多维技能储备，融合创意与技术</p>
+          <h2 className="skills__heading">核心能力</h2>
+          <p className="skills__sub">短视频创作 + AIGC + 新媒体，打造有网感的内容生产力</p>
         </div>
 
         {/* 技能卡片 */}

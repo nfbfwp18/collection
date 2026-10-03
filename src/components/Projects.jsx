@@ -4,27 +4,38 @@ import './Projects.css'
 // 视频作品（置顶）
 const featuredVideos = [
   {
+    id: 'v2',
+    title: '《捡漏未来摄政王，我只想发财》',
+    category: 'AIGC 精品短剧 · 导演 / 剪辑 / 后期',
+    award: '🔥 抖音 30W+ 播放 · 红果热度 4000W+',
+    tags: ['AIGC 短剧', '导演作品', '剪辑后期', '短视频', '爆款内容'],
+    desc: '以 AIGC 抽卡 + 全流程后期独立完成的精品短剧，担任导演及后期负责人，从脚本策划、AI 画面生成、素材筛选到精剪调色全程把控。作品上线后表现亮眼：抖音播放量突破 30 万+，红果短剧平台热度超 4000 万，收藏量 2 万+，验证了 AIGC 内容从创意到爆款的完整制作能力。',
+    year: '2026',
+    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759189258520&bvid=BV1USj36xExR&cid=39161761457&p=1',
+    isExternal: true,
+  },
+  {
+    id: 'v3',
+    title: '《时光里的传承》',
+    category: 'AIGC 创作 · AI 辅助文化叙事',
+    award: '✦ AIGC 内容创作全流程实践',
+    tags: ['AIGC', 'AI 创作', '文化叙事', '视频剪辑'],
+    desc: '以 AI 生成技术为核心工具，结合传统文化叙事脉络，完成从脚本策划、素材生成到后期剪辑的全流程创作，探索 AIGC 辅助视频内容生产的完整实践路径，展现 AI 时代的内容创作效率与视觉可能性。',
+    year: '2026',
+    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759189258520&bvid=BV1USj36xExR&cid=39161761457&p=1',
+    isExternal: true,
+  },
+  {
     id: 'v1',
     title: '《古越酒韵》',
     category: '动画设计 · 蓝桥杯获奖作品',
     award: '🏆 第十七届蓝桥杯 · 浙江赛区三等奖',
     tags: ['动画设计', '视觉艺术', '团队参赛', '蓝桥杯'],
-    desc: '...', // 省略了描述
+    desc: '以绍兴黄酒文化为主题的原创动画短片，担任团队核心成员，负责分镜设计与动画制作，将传统文化元素与现代动画语言融合，荣获第十七届蓝桥杯视觉艺术设计赛动画设计类浙江赛区三等奖。',
     year: '2026',
     src: '//player.bilibili.com/player.html?bvid=BV1S2j36tEi9',
-    isExternal: true // <--- 必须在大括号里面
-  }, // <--- 注意这里的逗号，必须有！
- 
-  {
-    id: 'v2',
-    title: '《时光里的传承》',
-    category: 'AIGC 创作 · AI 辅助视频',
-    award: '✦ AIGC 内容创作实践',
-    tags: ['AIGC', 'AI 创作', '视频剪辑', '文化叙事'],
-    desc: '以 AI 生成技术为核心工具，结合传统文化叙事脉络，完成从脚本策划、素材生成到后期剪辑的全流程创作，探索 AIGC 辅助视频内容生产的完整实践路径。',
-    year: '2026',
-    src: '//player.bilibili.com/player.html?isOutside=true&aid=116759189258520&bvid=BV1USj36xExR&cid=39161761457&p=1',
-  isExternal:true },
+    isExternal: true,
+  },
 ]
 
 // UI 展板数据
@@ -170,8 +181,8 @@ export default function Projects() {
             <span className="projects__eyebrow-line" />
             <span>SELECTED WORKS</span>
           </div>
-          <h2 className="projects__heading">精选作品</h2>
-          <p className="projects__sub">每一帧都是视觉表达的尝试，每个项目都承载着创作的温度</p>
+          <h2 className="projects__heading">作品案例</h2>
+          <p className="projects__sub">从 AIGC 短剧到短视频创作，用作品说话</p>
         </div>
 
         {/* ★ 视频作品 ★ */}
