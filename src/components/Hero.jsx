@@ -43,7 +43,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__sub">
-          懂 AIGC 的视频创作者 · 抖音短剧导演作品播放 30W+ · 熟练 Premiere / PS / 多 AI 工具 · 新媒体敏锐度高
+          懂 AIGC 的短剧导演 · 抖音播放 30W+ / 红果热度 3664W+ · 熟练 PR / PS / 多 AI 工具 · 网感好执行力强
         </p>
 
         <div className="hero__actions">
@@ -59,17 +59,22 @@ export default function Hero() {
         <div className="hero__stats">
           <div className="hero__stat">
             <span className="hero__stat-num">30W+</span>
-            <span className="hero__stat-label">抖音短剧播放量</span>
+            <span className="hero__stat-label">抖音短剧播放</span>
           </div>
           <div className="hero__stat-divider" />
           <div className="hero__stat">
-            <span className="hero__stat-num">4000W+</span>
+            <span className="hero__stat-num">3664W+</span>
             <span className="hero__stat-label">红果短剧热度</span>
           </div>
           <div className="hero__stat-divider" />
           <div className="hero__stat">
-            <span className="hero__stat-num">2W+</span>
+            <span className="hero__stat-num">2.3W+</span>
             <span className="hero__stat-label">作品收藏量</span>
+          </div>
+          <div className="hero__stat-divider" />
+          <div className="hero__stat">
+            <span className="hero__stat-num">六级</span>
+            <span className="hero__stat-label">大学英语证书</span>
           </div>
           <div className="hero__stat-divider" />
           <div className="hero__stat">

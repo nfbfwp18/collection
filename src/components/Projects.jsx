@@ -6,11 +6,12 @@ const featuredVideos = [
   {
     id: 'v2',
     title: '《捡漏未来摄政王，我只想发财》',
-    category: 'AIGC 精品短剧 · 导演 / 剪辑 / 后期',
-    award: '🔥 抖音 30W+ 播放 · 红果热度 4000W+',
-    tags: ['AIGC 短剧', '导演作品', '剪辑后期', '短视频', '爆款内容'],
-    desc: '以 AIGC 抽卡 + 全流程后期独立完成的精品短剧，担任导演及后期负责人，从脚本策划、AI 画面生成、素材筛选到精剪调色全程把控。作品上线后表现亮眼：抖音播放量突破 30 万+，红果短剧平台热度超 4000 万，收藏量 2 万+，验证了 AIGC 内容从创意到爆款的完整制作能力。',
+    category: 'AIGC 精品短剧 · 导演 / 剪辑 / 后期 · 全 52 集',
+    award: '🔥 抖音 30W+ 播放 · 红果热度 3664W+ · 收藏 2.3W+',
+    tags: ['AIGC 短剧', '导演作品', '剪辑后期', '短视频', '爆款内容', '52集'],
+    desc: '以 AIGC 抽卡 + 全流程后期独立完成的精品短剧，担任导演及后期负责人，从脚本策划、AI 画面生成、素材筛选到精剪调色、音效包装全程把控。全剧共 52 集，上线后表现亮眼：抖音播放量突破 30 万+，红果短剧平台热度高达 3664 万+，收藏量 2.3 万+，验证了 AIGC 内容从创意到爆款的完整制作能力与商业价值。',
     year: '2026',
+    poster: '/drama-poster.png',
     src: '//player.bilibili.com/player.html?isOutside=true&aid=116759189258520&bvid=BV1USj36xExR&cid=39161761457&p=1',
     isExternal: true,
   },
@@ -61,10 +62,12 @@ function VideoCard({ v, index }) {
   };
 
    return (
-    <div className={`video-card ${index === 0 ? 'video-card--first' : ''}`}>
+    <div className={`video-card ${index === 0 ? 'video-card--first' : ''} ${v.poster ? 'video-card--has-poster' : ''}`}>
       <div className="video-card__award-tag">{v.award}</div>
       <div className="video-card__media" onClick={handlePlay}>
-        {v.isExternal ? (
+        {v.poster ? (
+          <img src={v.poster} alt={v.title} className="video-card__poster" />
+        ) : v.isExternal ? (
           <iframe 
             src={v.src} 
             className="video-card__video"

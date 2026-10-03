@@ -96,6 +96,24 @@
   transform: scale(1.02);
 }
 
+/* 海报图 */
+.video-card__poster {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.video-card:hover .video-card__poster {
+  transform: scale(1.03);
+}
+
+.video-card--has-poster .video-card__media {
+  cursor: default;
+}
+
 /* 播放/暂停蒙层 */
 .video-card__play-mask {
   position: absolute;
