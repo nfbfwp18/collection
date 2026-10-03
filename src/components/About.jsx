@@ -37,12 +37,6 @@ export default function About() {
                 </span>
                 <span>3036404446@qq.com</span>
               </li>
-              <li>
-                <span className="about__contact-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                </span>
-                <span>七月初到岗</span>
-              </li>
             </ul>
           </div>
         </div>
@@ -101,7 +95,12 @@ export default function About() {
                   <span>网络动画设计</span>
                   <span>图像处理技术</span>
                 </div>
-                <p className="about__edu-note">学生会干部 · 协助策划图书馆书展活动 · 负责歌手比赛后台及院校篮球赛工作人员统筹协调</p>
+                <p className="about__edu-note">
+                  <strong>获奖荣誉：</strong>第十七届蓝桥杯视觉艺术设计赛浙江赛区三等奖（动画作品《古越酒韵》）· 大学英语六级
+                </p>
+                <p className="about__edu-note">
+                  <strong>校园经历：</strong>学生会干部 · 协助策划图书馆书展活动 · 负责校园歌手大赛后台执行与院校篮球赛工作人员统筹协调 · 具备良好的活动组织能力、跨部门沟通能力与团队协作精神
+                </p>
               </div>
             </div>
           </div>
