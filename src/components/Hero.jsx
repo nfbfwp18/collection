@@ -43,7 +43,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__sub">
-          懂 AIGC 的短剧导演 · 抖音播放 30W+ / 红果热度 3664W+ · 熟练 PR / PS / 多 AI 工具 · 网感好执行力强
+          懂 AIGC 的短剧导演 · 抖音播放 30W+ / 红果热度 3664W+ · 熟练达芬奇 / 剪映 / PS / 多 AI 工具 · 网感好执行力强
         </p>
 
         <div className="hero__actions">

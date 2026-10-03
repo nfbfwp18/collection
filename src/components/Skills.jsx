@@ -2,13 +2,13 @@ import './Skills.css'
 
 // 软件工具列表
 const softwareList = [
-  { name: 'Premiere Pro', short: 'PR', color: '#EA77FF' },
+  { name: 'DaVinci Resolve', short: '达芬奇', color: '#E8551F' },
+  { name: '剪映', short: '剪映', color: '#00FFF0' },
   { name: 'Photoshop', short: 'PS', color: '#31A8FF' },
   { name: 'After Effects', short: 'AE', color: '#9999FF' },
   { name: 'Audition', short: 'AU', color: '#00E4BB' },
   { name: 'Animate', short: 'AN', color: '#FF7C00' },
   { name: 'Adobe XD', short: 'XD', color: '#FF61F6' },
-  { name: '剪映', short: '剪映', color: '#00FFF0' },
   { name: '3ds Max', short: '3DMAX', color: '#37A5CC' },
   { name: 'Blender', short: 'Blender', color: '#E87D0D' },
   { name: 'Word / Excel / PPT', short: 'Office', color: '#D83B01' },
@@ -38,10 +38,10 @@ const skills = [
       </svg>
     ),
     title: '短视频剪辑 · 后期包装',
-    subtitle: 'PR · 剪映 · AE',
-    level: 88,
-    desc: '熟练掌握 Premiere 全流程剪辑，涵盖脚本规划、精剪、节奏把控、调色、字幕包装及音效合成；熟悉抖音、小红书等平台内容调性，可独立产出符合短视频平台审美的成片内容。',
-    tags: ['Premiere', '剪映', '精剪调色', '后期包装', '节奏把控'],
+    subtitle: '达芬奇 DaVinci Resolve · 剪映',
+    level: 90,
+    desc: '精通达芬奇 DaVinci Resolve 专业剪辑与电影级调色，熟练使用剪映高效产出短视频内容；涵盖脚本规划、精剪节奏把控、专业调色、字幕包装、音效合成全流程；熟悉抖音、小红书等平台内容调性与爆款节奏，可独立完成从创意到成片的完整交付。',
+    tags: ['达芬奇调色', '剪映', '精剪节奏', '后期包装', '短视频调性'],
   },
   {
     icon: (
